@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="btnClearPoints" />
+    <item type="id" name="btnOverlayPerm" />
+    <item type="id" name="btnRootCheck" />
+    <item type="id" name="btnStartService" />
+    <item type="id" name="btnStopService" />
+    <item type="id" name="etHold" />
+    <item type="id" name="etInterval" />
+    <item type="id" name="pointsInfo" />
+    <item type="id" name="statusText" />
+</resources>

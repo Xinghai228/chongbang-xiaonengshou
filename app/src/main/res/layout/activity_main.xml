@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#fff4f5f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ff111111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RootClicker · 底层连点器" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="root + uinput 注入，延迟 1–10ms" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/statusText" android:background="#ffffffff" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="状态未知" />
+        <Button android:id="@id/btnOverlayPerm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="① 授予悬浮窗权限" />
+        <Button android:id="@id/btnRootCheck" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="② 检查 Root" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击间隔 (ms)" />
+                <EditText android:textSize="18.0sp" android:id="@id/etInterval" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="50" android:inputType="number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff555555" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按压时长 (ms)" />
+                <EditText android:textSize="18.0sp" android:id="@id/etHold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="10" android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="提示：间隔需 ≥ 按压时长；想极限连点可把按压设为 1–5ms" />
+        <Button android:id="@id/btnStartService" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="③ 启动悬浮窗" />
+        <Button android:id="@id/btnStopService" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="关闭悬浮窗" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/pointsInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="已保存点位：0" />
+        <Button android:id="@id/btnClearPoints" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="清空所有点位" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff888888" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="用法：启动悬浮窗后，点悬浮条「＋」进入选点，拖动圆点调整位置，点右上「完成」；点「▶」一键执行。" />
+    </LinearLayout>
+</ScrollView>

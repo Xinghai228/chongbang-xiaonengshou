@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="id" name="btnClearPoints" id="0x7f010000" />
+    <public type="id" name="btnOverlayPerm" id="0x7f010001" />
+    <public type="id" name="btnRootCheck" id="0x7f010002" />
+    <public type="id" name="btnStartService" id="0x7f010003" />
+    <public type="id" name="btnStopService" id="0x7f010004" />
+    <public type="id" name="etHold" id="0x7f010005" />
+    <public type="id" name="etInterval" id="0x7f010006" />
+    <public type="id" name="pointsInfo" id="0x7f010007" />
+    <public type="id" name="statusText" id="0x7f010008" />
+    <public type="layout" name="activity_main" id="0x7f020000" />
+    <public type="string" name="app_name" id="0x7f030000" />
+    <public type="xml" name="accessibility_service" id="0x7f040000" />
+    <public type="mipmap" name="ic_launcher" id="0x7f050000" />
+</resources>
